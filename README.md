@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
+On cloning we will get "Type Error : Cannot read the property 'config' of null". So, generate a new angular-cli project and replace the app assets and styles.scss files. Also add styles.scss in .angular-cli.json file.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
