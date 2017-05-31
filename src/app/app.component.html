@@ -1,3 +1,80 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+      <!--<a class="navbar-brand" href="#/"><img src="shared/images/logo.png" height=30 width=41></a>-->
+    </div>
+    <span class='navTitle'>Helping Out Public Effectively</span>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a [routerLink]="['/home']"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span> home</a>
+        </li>
+        <li>
+          <a [routerLink]="['/about']"> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a>
+        </li>
+        <li>
+          <a [routerLink]="['/gallery']"> <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Gallery</a>
+        </li>
+        <li>
+          <a [routerLink]="['/contact']"> <span class="fa fa-envelope-o" aria-hidden="true"></span> Contact</a>
+        </li>
+        <li>
+          <a [routerLink]="['/contribute']"> <span class="fa fa-money" aria-hidden="true"></span> Contribute</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--<div>-->
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+<!--</div>-->
+
+<footer class="row-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h2>Helping Out Public Effectively</h2>
+                <ul>
+                    <!--<li>{{contactUs.address}}</li>
+                    <li><i class="fa fa-phone-square"></i>&nbsp; {{contactUs.mobilePrimary}}</li>
+                    <li><i class="fa fa-phone-square"></i>&nbsp;{{contactUs.mobileSecondary}}</li>
+                    <li><i class="fa fa-envelope"></i>&nbsp;{{contactUs.email}}</li>-->
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2> Links</h2>
+                <div class="menu-footer-container">
+                    <ul class="list-unstyled">
+                        <li><a class="glyphicon glyphicon-arrow-right" ui-sref="app">&nbsp;Home </a></li>
+                        <li><a class="glyphicon glyphicon-arrow-right" ui-sref="app.aboutus">&nbsp;About</a></li>
+                        <li><a class="glyphicon glyphicon-arrow-right" ui-sref="app.contactus">&nbsp;Contact</a></li>
+                        <li><a class="glyphicon glyphicon-arrow-right" ui-sref="app.gallery">&nbsp;Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="nav navbar-nav" style="padding: 40px 10px;">
+                    <!--<a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i
+                            class="fa fa-google-plus"></i></a>-->
+                    <!--<a class="btn  btn-social-icon btn-facebook" href="{{resources.contactUs.facebook}}" target="_blank"><i
+                            class="fa fa-facebook"></i></a>-->
+                    <!--<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                            class="fa fa-linkedin"></i></a>-->
+                    <!--<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>-->
+                    <!--<a class="btn btn-social-icon btn-youtube" href="{{contactUs.youtube}}" target="_blank"><i class="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:hope4socialservice@gmail.com"><i class="fa fa-envelope-o"></i></a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
