@@ -1,3 +1,53 @@
-<p>
-  contribute works!
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Contribute</li>
+            </ul>
+        </div>
+        <div class="col-xs-12">
+            <h1>Contribute</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 col-xs-12">
+            <h2> Donation Information</h2>
+            <div class="accountdetails">
+                <h3>Account Details</h3>
+                Name : {{accountDetails.name}}<br> Account number : {{accountDetails.number}}
+                <br> IFSC : {{accountDetails.ifsc}} <br> Branch : {{accountDetails.branch}}
+            </div>
+            <br>
+            <!--<div class="btn-group" role="group" aria-label="...">
+                <a type="button" class="btn btn-success" ng-click="showDetails('paytm')">
+                    <i class="fa fa-rupee"></i> Paytm</a>
+                <a type="button" class="btn btn-primary" ng-click="showDetails('bhim')">
+                    <i class="fa fa-rupee"></i> BHIM </a>
+            </div>-->
+            <!--<div ng-show="showPay"><br> {{showContent}}
+            </div>-->
+        </div>
+        <div class="col-md-3 col-xs-12">
+            <h2 class="payHeader"> PayTM</h2>
+            <!--<h4>9848022335</h4>-->
+            <div>
+                <!--<img class="qrcode img-hover img-responsive" src="../img/sampleQRCode.png" alt="">-->
+                <h2>QR Code</h2>
+                <!--<img class="qrcode img-hover img-responsive" src="../img/comingSoon.jpeg" alt="">-->
+            </div>
+            <br>
+        </div>
+        <div class="col-md-3 col-xs-12">
+            <h2 class="payHeader"> BHIM</h2>
+            <!--<h4>hopeindia@upi</h4>-->
+            <div>
+                <!--<img class="qrcode img-hover img-responsive" src="../img/sampleQRCode.png" alt="">-->
+                <h2>QR Code</h2>
+                <!--<img class="qrcode img-hover img-responsive" src="../img/comingSoon.jpeg" alt="">-->
+            </div>
+            <br>
+        </div>
+    </div>
+</div>

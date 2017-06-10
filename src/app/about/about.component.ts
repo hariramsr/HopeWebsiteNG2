@@ -16,5 +16,4 @@ export class AboutComponent implements OnInit {
     this.data=this.hopeService.getData().about;
   }
   
-
 }
