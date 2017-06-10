@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { HopeService } from '../hope.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  data;
+  constructor(
+    private route: ActivatedRoute,
+    private hopeService: HopeService
+  ) { }
 
   ngOnInit() {
+    this.route.data
+      .subscribe((result) => {
+        this.data = result.backendData;
+        this.hopeService.saveData(this.data);
+      });
   }
 
 }

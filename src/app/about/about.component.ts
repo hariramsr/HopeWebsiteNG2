@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HopeService } from '../hope.service';
 
 @Component({
   selector: 'app-about',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  data;
+  constructor(
+    private hopeService:HopeService
+  ) { }
 
   ngOnInit() {
+    this.data=this.hopeService.getData().about;
   }
+  
 
 }

@@ -12,6 +12,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContributeComponent } from './contribute/contribute.component';
 import { SearchService } from './backend.service';
+import { BackendResolver } from './backend.resolver';
+import { HopeService } from './hope.service'
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { SearchService } from './backend.service';
     RouterModule.forRoot(rootRouterConfig, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [
-    SearchService
+    SearchService,
+    BackendResolver,
+    HopeService
   ],
   bootstrap: [AppComponent]
 })

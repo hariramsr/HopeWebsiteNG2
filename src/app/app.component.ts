@@ -13,13 +13,5 @@ export class AppComponent {
     private searchService: SearchService
     ){}
     ngOnInit() {
-      this.searchService.call().subscribe(
-        (data) => {
-          this.resources = data;
-          console.log(this.resources);
-        },
-        (error) => {
-        }
-      );
     }
 }

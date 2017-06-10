@@ -7,8 +7,8 @@ describe('hope-website-ng2 App', () => {
     page = new HopeWebsiteNG2Page();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message HOPE', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Helping Out Public Effectively - H.O.P.E');
   });
 });
