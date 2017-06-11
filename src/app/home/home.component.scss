@@ -1,0 +1,43 @@
+$primaryColor: #303f9f;
+
+.panel-content{
+  height:100px;
+}
+
+.panel-heading{
+  color: #e5e5e5;
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+}
+
+.carousel .item {
+  height: 75vh;
+  img {
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    height: 75vh;
+    position: absolute;
+    top: 0;
+  }   
+}
+
+#carouselButtons {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+}
+
+#hopeHeader{
+  text-align:center;
+}
+
+.pattern2 {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    background-image: url(../../assets/img/donateBackground.png);
+    width:100vw !important;
+    p,h1,h2,h3{
+      color: #f5f5f5;
+    }
+}

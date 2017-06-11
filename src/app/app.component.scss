@@ -1,0 +1,30 @@
+
+.navbar-inverse {
+  background: #303f9f;
+  color: #ffffff;
+  border-color:#303f9f;
+  .navbar-nav>li>a {
+    color: #e5e5e5;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.navTitle{
+  font-size: x-large;
+}
+
+.row-footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  background-color: #AfAfAf;
+}
+
+footer > div > div > div:nth-child(1) > ul  li{
+      list-style: none;
+}
+footer .menu-footer-container ul > li a{
+    color:black;
+    font-size:17px;
+}
