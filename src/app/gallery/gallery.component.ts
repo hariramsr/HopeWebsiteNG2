@@ -8,7 +8,7 @@ import { EventService } from './event/event.service';
   styleUrls: ['./gallery.component.css'],
 })
 export class GalleryComponent implements OnInit {
-  events:Object;
+  events: Object;
   arrayOfKeys;
   constructor(
     private hopeService: HopeService,
@@ -16,7 +16,7 @@ export class GalleryComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.events=this.hopeService.getData().events;
+    this.events = this.hopeService.getData().events;
     this.arrayOfKeys = Object.keys(this.events);
   }
 

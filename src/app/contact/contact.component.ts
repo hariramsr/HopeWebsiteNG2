@@ -7,13 +7,13 @@ import { HopeService } from '../hope.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  contactUs:Object;
+  contactUs: Object;
   constructor(
-    private hopeService:HopeService
+    private hopeService: HopeService
   ) { }
 
   ngOnInit() {
-     this.contactUs=this.hopeService.getData().contactUs;
+     this.contactUs = this.hopeService.getData().contactUs;
   }
 
 }

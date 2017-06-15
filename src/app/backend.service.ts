@@ -12,12 +12,11 @@ export class SearchService {
         private http: Http,
     ) { }
     public call() {
-        return this.http.get("assets/appData.json")
+        return this.http.get('assets/appData.json')
             .map((response) => {
                 return response.json();
             });
     }
-} 
-
+}
 // return this.http.post('https://apphope.herokuapp.com/getConfigData','')
 // return response.json().data;

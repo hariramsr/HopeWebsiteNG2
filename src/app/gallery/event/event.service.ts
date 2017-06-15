@@ -10,4 +10,4 @@ export class EventService {
     public setCurrentEvent(data) {
         this.event = data;
     }
-} 
+}

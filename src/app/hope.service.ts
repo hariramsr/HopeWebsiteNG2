@@ -13,4 +13,4 @@ export class HopeService {
     public saveData(param) {
         this.resources = param;
     }
-} 
+}

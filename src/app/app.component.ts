@@ -10,8 +10,8 @@ export class AppComponent implements OnInit {
   // title = 'app works!';
   contactUs;
   constructor(
-    private hopeService:HopeService
-    ){}
+    private hopeService: HopeService
+    ) {}
     ngOnInit() {
       // this.contactUs=this.hopeService.getData().contactUs;
     }
