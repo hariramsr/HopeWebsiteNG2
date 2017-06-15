@@ -1,3 +1,24 @@
-<p>
-  gallery works!
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Gallery</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4" *ngFor="let event of arrayOfKeys">
+                <div  [routerLink]="['/gallery/event']" class="img-hover thumbnail" (click)="currentEvent(event)">
+                <img class="img-responsive img-hover" src="{{events[event].photo}}" alt="">
+                <h3>
+                 <div>{{events[event].name}}</div>
+                </h3>
+            </div>
+        </div>  
+    </div>
+</div>
+
+  
+<!--<div ng-click="currentEvent(event)" class="img-hover thumbnail">-->

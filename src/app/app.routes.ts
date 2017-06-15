@@ -16,12 +16,14 @@ export const rootRouterConfig: Routes = [
         }
   },
   { path: 'about', component: AboutComponent},
-  { path: 'gallery', component: GalleryComponent,
-    //  children: [
-    //   { path: '', component: MySearchComponent },
-    //   { path: 'apiList', component: ApiListComponent }
-    //  ]
-  },
+  { path: 'gallery', loadChildren: 'app/gallery/gallery.module#GalleryModule' },
+
+  // { path: 'gallery', component: GalleryComponent,
+  //    children: [
+  //     { path: '', component: MySearchComponent },
+  //     { path: 'apiList', component: ApiListComponent }
+  //    ]
+  // },
   { path: 'contact', component: ContactComponent},
   { path: 'contribute', component: ContributeComponent}
 ];

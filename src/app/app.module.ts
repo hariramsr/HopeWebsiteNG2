@@ -13,14 +13,14 @@ import { ContactComponent } from './contact/contact.component';
 import { ContributeComponent } from './contribute/contribute.component';
 import { SearchService } from './backend.service';
 import { BackendResolver } from './backend.resolver';
-import { HopeService } from './hope.service'
+import { HopeService } from './hope.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    GalleryComponent,
+    // GalleryComponent,
     ContactComponent,
     ContributeComponent
   ],

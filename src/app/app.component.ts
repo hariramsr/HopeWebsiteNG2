@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
-import { SearchService } from './backend.service';
+import { Component, OnInit } from '@angular/core';
+import { HopeService } from './hope.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   // title = 'app works!';
-  resources;
+  contactUs;
   constructor(
-    private searchService: SearchService
+    private hopeService:HopeService
     ){}
     ngOnInit() {
+      // this.contactUs=this.hopeService.getData().contactUs;
     }
 }
+

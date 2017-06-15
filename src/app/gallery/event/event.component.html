@@ -1,0 +1,49 @@
+<div view-title="Event">
+    <div class="myEvent">
+        <div class="formspacer"> </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">{{currentEvent.name}}
+                <small>{{currentEvent.date}}</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a [routerLink]="['/home']">Home</a>
+                </li>
+                <li><a [routerLink]="['/gallery']">Gallery</a>
+                </li>
+                <li class="active">Event</li>
+            </ol>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+    </div>
+    <div class="col-md-4">
+        <h2>Event Description</h2>
+        <p>{{currentEvent.quote}}</p>
+        <!--<h2 ng-show='event.contributed || event.inspired'>Event Details</h2>
+        <div ng-show='event.contributed'>
+            <h3>Contribution</h3>
+            <h5>{{event.contributed}}</h5>
+        </div>
+        <div ng-show='event.inspired'>
+            <h3>Inspired</h3>
+            <h5>{{event.inspired}}</h5>
+        </div>-->
+    </div>
+<!--</div>-->
+<hr>
+</div>
+<!-- /.container -->
+<script>
+    $(document).ready(function () {
+        $("#mycarousel-2").carousel({ interval: 2000 });
+    });
+</script>
