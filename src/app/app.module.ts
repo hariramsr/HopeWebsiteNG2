@@ -16,6 +16,7 @@ import { ContributeComponent } from './contribute/contribute.component';
 import { SearchService } from './backend.service';
 import { BackendResolver } from './backend.resolver';
 import { HopeService } from './hope.service';
+import { NavbarComponent } from './navbar/navbar.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HopeService } from './hope.service';
     AboutComponent,
     // GalleryComponent,
     ContactComponent,
-    ContributeComponent
+    ContributeComponent,
+    NavbarComponent
   ],
   imports: [
     CarouselModule,

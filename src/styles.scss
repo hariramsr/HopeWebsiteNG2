@@ -147,6 +147,9 @@ textarea#feedback{
   body{
     font-size:12px;
   }
+  h1{
+    font-size:24px;
+  }
   .thumbnail{
     height: 300px;
   }
@@ -160,32 +163,39 @@ textarea#feedback{
     height:50vh;
     width:100%;
   }
+  body > app-root > hope-navbar > nav > div > div.navbar-header > a > img{
+    height:40px;
+    width:65px;
+  }
 }
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 @media (min-width:481px)  {
-
+  slide img{
+    height:65vh;
+  }
  }
  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-@media (min-width:641px)  { 
-  body{
-    font-size:14px;
+@media (min-width:641px)  {
+  slide img{
+    height:70vh;
   }
-  .thumbnail img {
-    height: 75%;
+     body > app-root > hope-navbar > nav > div > div.navbar-header > a > img{
+    height:70px;
+    width:95px;
   }
-  
 }
  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 @media (min-width:961px)  {
-  body{
-    font-size:14px;
-  }
   .panel-content{
     height:100px;
   }
   slide img{
     height:75vh;
   }
+  h1{
+    font-size:36px;
+  }
+
 }
  /* big landscape tablets, laptops, and desktops */ 
 @media (min-width:1025px) {
@@ -197,5 +207,15 @@ textarea#feedback{
 @media (min-width:1281px) {
   body{
     font-size:18px;
+  }
+}
+
+// Iphone5 specific style
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 320px) 
+and (orientation : portrait) { 
+  nav > div > span{
+    font-size:20px!important;
   }
 }
