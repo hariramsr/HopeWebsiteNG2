@@ -5,9 +5,10 @@ import { GalleryComponent } from './gallery.component';
 import { routing } from './gallery.routing';
 import { EventComponent } from './event/event.component';
 import { EventService } from './event/event.service';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
-  imports: [CommonModule, routing],
+  imports: [CommonModule, routing, CarouselModule],
   declarations: [GalleryComponent, EventComponent],
   providers: [EventService]
 })

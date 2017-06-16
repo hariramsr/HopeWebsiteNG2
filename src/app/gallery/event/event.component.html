@@ -23,12 +23,23 @@
 
 
     <div class="row">
-
-    </div>
-    <div class="col-md-4">
-        <h2>Event Description</h2>
-        <p>{{currentEvent.quote}}</p>
-        <!--<h2 ng-show='event.contributed || event.inspired'>Event Details</h2>
+        <div class="col-md-8">
+            <carousel>
+                <slide>
+                    <img src="assets/img/comingSoon.jpeg" alt="First slide">
+                </slide>
+                <slide>
+                    <img src="assets/img/HopeBanner.jpg" alt="Second slide">
+                </slide>
+                <slide>
+                    <img src="assets/img/sampleQRCode.png" alt="Third slide">
+                </slide>
+            </carousel>
+        </div>
+        <div class="col-md-4">
+            <h2>Event Description</h2>
+            <p>{{currentEvent.quote}}</p>
+            <!--<h2 ng-show='event.contributed || event.inspired'>Event Details</h2>
         <div ng-show='event.contributed'>
             <h3>Contribution</h3>
             <h5>{{event.contributed}}</h5>
@@ -37,13 +48,8 @@
             <h3>Inspired</h3>
             <h5>{{event.inspired}}</h5>
         </div>-->
+        </div>
     </div>
-<!--</div>-->
-<hr>
+    <hr>
 </div>
 <!-- /.container -->
-<script>
-    $(document).ready(function () {
-        $("#mycarousel-2").carousel({ interval: 2000 });
-    });
-</script>

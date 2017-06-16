@@ -147,12 +147,6 @@ textarea#feedback{
   body{
     font-size:12px;
   }
-  .carousel .item {
-    height: 60vh; 
-  }
-  .carousel .item img {
-    height: 60vh;
-  }
   .thumbnail{
     height: 300px;
   }
@@ -161,6 +155,10 @@ textarea#feedback{
   }
   .panel-content{
   height:50px;
+  }
+  slide img{
+    height:50vh;
+    width:100%;
   }
 }
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
@@ -184,6 +182,9 @@ textarea#feedback{
   }
   .panel-content{
     height:100px;
+  }
+  slide img{
+    height:75vh;
   }
 }
  /* big landscape tablets, laptops, and desktops */ 

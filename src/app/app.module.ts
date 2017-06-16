@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 import { rootRouterConfig } from './app.routes';
 
 import { AppComponent } from './app.component';
@@ -25,6 +27,7 @@ import { HopeService } from './hope.service';
     ContributeComponent
   ],
   imports: [
+    CarouselModule,
     BrowserModule,
     FormsModule,
     HttpModule,

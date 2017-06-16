@@ -10,24 +10,6 @@ $primaryColor: #303f9f;
   border-color: $primaryColor;
 }
 
-.carousel .item {
-  height: 75vh;
-  img {
-    max-width: 100%;
-    width: 100%;
-    left: 0;
-    height: 75vh;
-    position: absolute;
-    top: 0;
-  }   
-}
-
-#carouselButtons {
-  bottom: 0px;
-  position: absolute;
-  right: 0px;
-}
-
 #hopeHeader{
   text-align:center;
 }
