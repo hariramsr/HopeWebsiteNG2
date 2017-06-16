@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
@@ -14,6 +14,7 @@ import { ContributeComponent } from './contribute/contribute.component';
 import { SearchService } from './backend.service';
 import { BackendResolver } from './backend.resolver';
 import { HopeService } from './hope.service';
+import {ConfigService} from "./config.service";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,11 @@ import { HopeService } from './hope.service';
     RouterModule.forRoot(rootRouterConfig, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [
+    ConfigService,
+    { provide: APP_INITIALIZER,
+      useFactory: (config:ConfigService) => () => config.load(),
+      deps: [ConfigService],
+      multi: true },
     SearchService,
     BackendResolver,
     HopeService
