@@ -41,7 +41,7 @@
                     <div class="col-sm-9">
                         <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name" ng-model="feedback.firstName"
                             required>
-                        <span ng-show="feedbackForm.firstname.$error.required && !feedbackForm.firstname.$pristine" class="help-block">Your First name is required.</span>
+                        <!--<span ng-show="feedbackForm.firstname.$error.required && !feedbackForm.firstname.$pristine" class="help-block">Your First name is required.</span>-->
                     </div>
                 </div>
                 <div class="form-group" ng-class="{ 'has-error' : feedbackForm.lastname.$error.required && !feedbackForm.lastname.$pristine }">
@@ -49,7 +49,7 @@
                     <div class="col-sm-9">
                         <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name" ng-model="feedback.lastName"
                             required>
-                        <span ng-show="feedbackForm.lastname.$error.required && !feedbackForm.lastname.$pristine" class="help-block">Your Last name is required.</span>
+                        <!--<span ng-show="feedbackForm.lastname.$error.required && !feedbackForm.lastname.$pristine" class="help-block">Your Last name is required.</span>-->
                     </div>
                 </div>
                 <div class="form-group">
@@ -63,11 +63,11 @@
                     <div class="col-sm-9">
                         <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email" ng-model="feedback.email" required>
 
-                        <span ng-show="feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine" class="glyphicon glyphicon-remove form-control-feedback"
-                            aria-hidden="true"></span>
-                        <span ng-show="(feedbackForm.emailid.$invalid ||
+                        <!--<span ng-show="feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine" class="glyphicon glyphicon-remove form-control-feedback"
+                            aria-hidden="true"></span>-->
+                        <!--<span ng-show="(feedbackForm.emailid.$invalid ||
                                         feedbackForm.emailid.$error.required) &&
-                                        !feedbackForm.emailid.$pristine" class="help-block">Enter a valid email address.</span>
+                                        !feedbackForm.emailid.$pristine" class="help-block">Enter a valid email address.</span>-->
                     </div>
                 </div>
                 <div class="form-group">

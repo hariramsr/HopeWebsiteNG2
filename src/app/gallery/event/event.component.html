@@ -24,30 +24,30 @@
 
     <div class="row">
         <div class="col-md-8">
-            <carousel>
+            <carousel id="EventCarousel">
                 <slide>
-                    <img src="assets/img/comingSoon.jpeg" alt="First slide">
+                    <img src="{{currentEvent.photos.photoOne}}" alt="First slide">
                 </slide>
                 <slide>
-                    <img src="assets/img/HopeBanner.jpg" alt="Second slide">
+                    <img src="{{currentEvent.photos.photoTwo}}" alt="Second slide">
                 </slide>
                 <slide>
-                    <img src="assets/img/sampleQRCode.png" alt="Third slide">
+                    <img src="{{currentEvent.photos.photoThree}}" alt="Third slide">
                 </slide>
             </carousel>
         </div>
         <div class="col-md-4">
             <h2>Event Description</h2>
             <p>{{currentEvent.quote}}</p>
-            <!--<h2 ng-show='event.contributed || event.inspired'>Event Details</h2>
+            <h2 ng-show='currentEvent.contributed || currentEvent.inspired'>Event Details</h2>
         <div ng-show='event.contributed'>
             <h3>Contribution</h3>
-            <h5>{{event.contributed}}</h5>
+            <h5>{{currentEvent.contributed}}</h5>
         </div>
         <div ng-show='event.inspired'>
             <h3>Inspired</h3>
-            <h5>{{event.inspired}}</h5>
-        </div>-->
+            <h5>{{currentEvent.inspired}}</h5>
+        </div>
         </div>
     </div>
     <hr>

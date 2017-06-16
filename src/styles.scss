@@ -141,6 +141,9 @@ textarea#feedback{
 }
 /*contact us ends*/
 
+footer > div > div > div.col-md-3 > div > ul > li > a{
+  text-decoration:none;
+}
 
  /* smartphones, iPhone, portrait 480x320 phones */ 
 @media (min-width:320px)  {
@@ -159,7 +162,12 @@ textarea#feedback{
   .panel-content{
   height:50px;
   }
-  slide img{
+  #homeCarousel slide img{
+    height:50vh;
+    width:100%;
+  }
+
+  #EventCarousel slide img{
     height:50vh;
     width:100%;
   }
@@ -170,16 +178,24 @@ textarea#feedback{
 }
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 @media (min-width:481px)  {
-  slide img{
+  #homeCarousel slide img{
     height:65vh;
+  }
+  #EventCarousel slide img{
+    height:50vh;
+    width:100%;
   }
  }
  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 @media (min-width:641px)  {
-  slide img{
+  #homeCarousel slide img{
     height:70vh;
   }
-     body > app-root > hope-navbar > nav > div > div.navbar-header > a > img{
+  // #EventCarousel slide img{
+  //   height:50vh;
+  //   width:100%;
+  // }
+  body > app-root > hope-navbar > nav > div > div.navbar-header > a > img{
     height:70px;
     width:95px;
   }
@@ -189,9 +205,13 @@ textarea#feedback{
   .panel-content{
     height:100px;
   }
-  slide img{
+  #homeCarousel slide img{
     height:75vh;
   }
+  // #EventCarousel slide img{
+  //   height:50vh;
+  //   width:100%;
+  // }
   h1{
     font-size:36px;
   }

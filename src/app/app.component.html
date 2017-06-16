@@ -20,10 +20,10 @@
         <h2> Links</h2>
         <div class="menu-footer-container">
           <ul class="list-unstyled">
-            <li><a class="glyphicon glyphicon-arrow-right" ui-sref="app">&nbsp;Home </a></li>
-            <li><a class="glyphicon glyphicon-arrow-right" ui-sref="app.aboutus">&nbsp;About</a></li>
-            <li><a class="glyphicon glyphicon-arrow-right" ui-sref="app.contactus">&nbsp;Contact</a></li>
-            <li><a class="glyphicon glyphicon-arrow-right" ui-sref="app.gallery">&nbsp;Gallery</a></li>
+            <li><a class="glyphicon glyphicon-arrow-right" [routerLink]="['/home']">&nbsp;Home </a></li>
+            <li><a class="glyphicon glyphicon-arrow-right" [routerLink]="['/about']">&nbsp;About</a></li>
+            <li><a class="glyphicon glyphicon-arrow-right" [routerLink]="['/contact']">&nbsp;Contact</a></li>
+            <li><a class="glyphicon glyphicon-arrow-right" [routerLink]="['/gallery']">&nbsp;Gallery</a></li>
           </ul>
         </div>
       </div>

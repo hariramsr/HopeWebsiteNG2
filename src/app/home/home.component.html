@@ -1,5 +1,5 @@
 <section>
-    <carousel>
+    <carousel id="homeCarousel">
         <slide>
             <img src="assets/img/homePage1.jpg" alt="First slide">
         </slide>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="panel-body">
                         <p class="panel-content">One Cannot help everyone, but everyone can help someone.</p>
-                        <a ui-sref="app.aboutus" class="btn btn-primary">More</a>
+                        <a [routerLink]="['/about']" class="btn btn-primary">More</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     <div class="panel-body">
                         <p class="panel-content">The Mission of the organisation is the service to the humanity and to save our planet. To work towards
                             Better, Clean, Healthy and Educated India.</p>
-                        <a ui-sref="app.aboutus" class="btn btn-primary">More</a>
+                        <a [routerLink]="['/about']" class="btn btn-primary">More</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                     <div class="panel-body">
                         <p class="panel-content">Hope works for govt. school children by providing them their needs, livelihood of people staying
                             at various orphanages, health services in the rural areas. </p>
-                        <a ui-sref="app.contactus" class="btn btn-primary">More</a>
+                        <a [routerLink]="['/contribute']" class="btn btn-primary">More</a>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                 <h1 class="heading-title">Donate little amount that help needy people</h1>
                 <p class="lead">Our job on earth is not to criticize, reject, or judge. Our purpose is to offer a helping hand, compassion,
                     and mercy. We are to do unto others as we hope they would do unto us.</p>
-                <a ui-sref="app.contactus" class="btn btn-primary"> Contribute Now </a>
+                <a [routerLink]="['/contribute']" class="btn btn-primary"> Contribute Now </a>
             </div>
         </div>
     </div>
