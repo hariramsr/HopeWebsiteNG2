@@ -7,7 +7,7 @@ import { HopeService } from '../hope.service';
   styleUrls: ['./contribute.component.css']
 })
 export class ContributeComponent implements OnInit {
-  accountDetails: Object;
+  accountDetails;
   constructor(
      private hopeService: HopeService
   ) { }

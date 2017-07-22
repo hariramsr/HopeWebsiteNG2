@@ -8,7 +8,7 @@ import { EventService } from './event/event.service';
   styleUrls: ['./gallery.component.css'],
 })
 export class GalleryComponent implements OnInit {
-  events: Object;
+  events;
   arrayOfKeys;
   constructor(
     private hopeService: HopeService,

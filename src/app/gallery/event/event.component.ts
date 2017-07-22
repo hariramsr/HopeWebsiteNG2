@@ -10,7 +10,7 @@ import { EventService } from './event.service';
 export class EventComponent implements OnInit {
   events;
   event: string;
-  currentEvent: Object;
+  currentEvent;
   constructor(
     private hopeService: HopeService,
     private eventService: EventService

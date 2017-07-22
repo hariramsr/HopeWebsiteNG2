@@ -7,7 +7,7 @@ import { HopeService } from '../hope.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  contactUs: Object;
+  contactUs;
   constructor(
     private hopeService: HopeService
   ) { }
