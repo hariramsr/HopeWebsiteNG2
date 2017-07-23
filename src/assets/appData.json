@@ -6,15 +6,15 @@
     "mobileSecondary": "+91 9538200933",
     "facebook": "https://www.facebook.com/HOPEforsocialservice/?fref=ts",
     "youtube": "https://www.youtube.com/channel/UCXxDYEqef3tv97e81xkJpeg",
-    "address": "Karanjikatte, kolar - 563101",
+    "address": "12th Cross, Karanjikatte, kolar - 563101",
     "gpsLocation": "Latitude - 12.9380492 <br>Longitude - 77.5665877",
     "accountDetails":{
       "name":"HELPING OUT PUBLIC EFFECTIVELY",
       "number":"10757101027402",
       "ifsc":"PKGB0010757",
       "branch":"Muduvathi.",
-      "paytm":"PayTm Number : 9538284012",
-      "bhim":"BHIM UPI : hopeNgoIndia@upi"
+      "paytm":"PayTm Number : ",
+      "bhim":"BHIM UPI : "
     }
   },
   "events": {
@@ -224,5 +224,8 @@
       "To provide educational support to the poor students. To render assistance to the orphans for their livelihood. To provide medical support to the poor needy people. To educate and motive people to keep their neighbourhood clean and to contribute for Clean India.",
       "To-do - Add more."
     ]
+  },
+  "header":{
+    "logo":"/img/logo.png"
   }
 }
