@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     this.route.data
       .subscribe((result) => {
         this.data = result.backendData;
-        this.hopeService.saveData(this.data);
+        // this.hopeService.saveData(this.data);
       });
   }
 

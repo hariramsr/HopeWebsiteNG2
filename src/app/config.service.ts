@@ -13,7 +13,8 @@ export class ConfigService {
   load() {
     console.log('Inside Load');
     return new Promise((resolve) => {
-      this.http.post('https://apphope.herokuapp.com/getConfigData','').map(res => res.json())
+      // this.http.post('https://apphope.herokuapp.com/getConfigData','').map(res => res.json())
+        this.http.get('assets/appData.json').map(res => res.json())
         .subscribe(config => {
           console.log('Configuration loaded...........');
           this.config = config;
@@ -22,4 +23,4 @@ export class ConfigService {
     });
   }
 }
-// this.http.get('assets/appData.json').map(res => res.json())
+

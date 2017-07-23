@@ -17,7 +17,8 @@ export class AppComponent implements OnInit {
     ) {}
     ngOnInit() {
       this.config = this.configSrvc.config;
-      console.log('Configurations: '+ JSON.stringify(this.config));
+      this.hopeService.saveData(this.config);
+      // console.log('Configurations: '+ JSON.stringify(this.config));
       // this.contactUs=this.hopeService.getData().contactUs;
     }
 }
