@@ -196,8 +196,10 @@ footer > div > div > div.col-md-3 > div > ul > li > a{
   //   width:100%;
   // }
   body > app-root > hope-navbar > nav > div > div.navbar-header > a > img{
-    height:70px;
-    width:95px;
+    height: 85px;
+    width: 105px;
+    position: relative;
+    bottom: 15px;
   }
 }
  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
