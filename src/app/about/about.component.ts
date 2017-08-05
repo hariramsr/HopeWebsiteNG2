@@ -9,10 +9,10 @@ import { HopeService } from '../hope.service';
 export class AboutComponent implements OnInit {
   data;
   constructor(
-    private hopeService: HopeService
+    // private hopeService: HopeService
   ) { }
 
   ngOnInit() {
-    this.data = this.hopeService.getData().about;
+    // this.data = this.hopeService.getData().about;
   }
 }

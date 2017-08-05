@@ -7,13 +7,13 @@ import { HopeService } from '../hope.service';
   styleUrls: ['./contribute.component.css']
 })
 export class ContributeComponent implements OnInit {
-  accountDetails;
+  // accountDetails;
   constructor(
-     private hopeService: HopeService
+    //  private hopeService: HopeService
   ) { }
 
   ngOnInit() {
-    this.accountDetails = this.hopeService.getData().contactUs.accountDetails;
+    // this.accountDetails = this.hopeService.getData().contactUs.accountDetails;
   }
 
 }
